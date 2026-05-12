@@ -1,0 +1,41 @@
+Algoritmo ConvertirRomano
+	
+	Definir numero Como Entero
+	Definir romano Como Cadena
+	
+	Escribir "Ingrese un número del 1 al 20: "
+	Leer numero
+	
+	// Estructura de selección múltiple
+	Segun numero Hacer
+		1: romano <- "I"
+		2: romano <- "II"
+		3: romano <- "III"
+		4: romano <- "IV"
+		5: romano <- "V"
+		6: romano <- "VI"
+		7: romano <- "VII"
+		8: romano <- "VIII"
+		9: romano <- "IX"
+		10: romano <- "X"
+		11: romano <- "XI"
+		12: romano <- "XII"
+		13: romano <- "XIII"
+		14: romano <- "XIV"
+		15: romano <- "XV"
+		16: romano <- "XVI"
+		17: romano <- "XVII"
+		18: romano <- "XVIII"
+		19: romano <- "XIX"
+		20: romano <- "XX"
+		De Otro Modo:
+			romano <- "Número fuera de rango."
+	FinSegun
+	
+	Si numero >= 1 Y numero <= 20 Entonces
+		Escribir "El número ", numero, " en romanos es: ", romano
+	Sino
+		Escribir romano
+	FinSi
+	
+FinAlgoritmo
