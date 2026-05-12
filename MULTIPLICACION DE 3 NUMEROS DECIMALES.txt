@@ -1,0 +1,64 @@
+#include "iostream"
+using namespace std;
+
+int main() {
+    double A, B, C, D;
+    while(true) {
+    cout<<"ingrese el primer numero decimal A: "<< endl;
+    cin>> A;
+    if(A == 0) {
+        cout<<"El numero ingresado es el 0, porfavor hazlo denuevo. "<< endl; 
+    }
+        else if(A == int(A)) {
+            cout<<"El numero es un entero, porfavor hazlo denuevo. "<< endl;
+        }
+        else if(A < 0) {
+            cout<<"El numero ingresado es un numero negativo, porfavor hazlo denuevo. "<< endl;
+        }
+        else {
+            cout<<"Numero aceptado."<< endl;
+            break;
+        }
+        
+    }   
+    
+    while(true) {
+    cout<<"ingrese el segundo numero decimal B: "<< endl;
+    cin>> B;
+    if(B == 0) {
+        cout<<"El numero ingresado es el 0, porfavor hazlo denuevo. "<< endl; 
+    }
+        else if(B == int(B)) {
+            cout<<"Este numero es un entero, porfavor hazlo denuevo. "<< endl;
+        }
+        else if(B < 0) {
+            cout<<"El numero ingresado es un numero negativo, porfavor hazlo denuevo. "<< endl;
+        }
+        else {
+            cout<<"Numero aceptado."<< endl;
+            break;
+        }
+    }
+    
+    while(true) {
+    cout<<"ingrese el tercer numero decimal C: "<< endl;
+    cin>> C;
+    if(C == 0) {
+        cout<<"El numero ingresado es el 0, porfavor hazlo denuevo. "<< endl; 
+    }
+        else if(C == int(C)) {
+            cout<<"Este numero es un entero, porfavor hazlo denuevo. "<< endl;
+        }
+        else if(C < 0) {
+            cout<<"El numero ingresado es un numero negativo, porfavor hazlo denuevo. "<< endl;
+        }
+        else {
+            cout<<"Numero aceptado."<< endl;
+            break;
+        }
+    }
+    
+    D = A * B * C;
+    
+    cout<<"El resultado de multiplicar estos tres numeros decimales --> "<< A << ", " << B << ", " << C << ", es igual a: " << D << endl;
+}

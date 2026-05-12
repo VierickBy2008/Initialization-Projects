@@ -1,0 +1,75 @@
+Algoritmo MultiplicarDecimalesValidados
+	
+	Definir A, B, C, D Como Real
+	Definir esValido Como Logico
+	
+	// --- Validacion para el numero A ---
+	Repetir
+		esValido <- Falso
+		Escribir "ingrese el primer numero decimal A: "
+		Leer A
+		Si A = 0 Entonces
+			Escribir "El numero ingresado es el 0, porfavor hazlo denuevo. "
+		Sino
+			Si A = Trunc(A) Entonces
+				Escribir "El numero es un entero, porfavor hazlo denuevo. "
+			Sino
+				Si A < 0 Entonces
+					Escribir "El numero ingresado es un numero negativo, porfavor hazlo denuevo. "
+				Sino
+					Escribir "Numero aceptado."
+					esValido <- Verdadero
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que esValido
+	
+	// --- Validacion para el numero B ---
+	Repetir
+		esValido <- Falso
+		Escribir "ingrese el segundo numero decimal B: "
+		Leer B
+		Si B = 0 Entonces
+			Escribir "El numero ingresado es el 0, porfavor hazlo denuevo. "
+		Sino
+			Si B = Trunc(B) Entonces
+				Escribir "Este numero es un entero, porfavor hazlo denuevo. "
+			Sino
+				Si B < 0 Entonces
+					Escribir "El numero ingresado es un numero negativo, porfavor hazlo denuevo. "
+				Sino
+					Escribir "Numero aceptado."
+					esValido <- Verdadero
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que esValido
+	
+	// --- Validacion para el numero C ---
+	Repetir
+		esValido <- Falso
+		Escribir "ingrese el tercer numero decimal C: "
+		Leer C
+		Si C = 0 Entonces
+			Escribir "El numero ingresado es el 0, porfavor hazlo denuevo. "
+		Sino
+			Si C = Trunc(C) Entonces
+				Escribir "Este numero es un entero, porfavor hazlo denuevo. "
+			Sino
+				Si C < 0 Entonces
+					Escribir "El numero ingresado es un numero negativo, porfavor hazlo denuevo. "
+				Sino
+					Escribir "Numero aceptado."
+					esValido <- Verdadero
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que esValido
+	
+	// --- Operacion y Resultado ---
+	D <- A * B * C
+	
+	Escribir ""
+	Escribir "El resultado de multiplicar estos tres numeros decimales --> ", A, ", ", B, ", ", C, ", es igual a: ", D
+	
+FinAlgoritmo
